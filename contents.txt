@@ -1,0 +1,13 @@
+logo: Queens Habesha Restaurant
+
+Home Section--------
+
+About Section-------
+
+Services Section-----
+
+Foods Secition------
+
+Contact Section------
+
+Footer Secetion------

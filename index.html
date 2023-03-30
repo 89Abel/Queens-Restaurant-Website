@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queens Habesha Restaurant</title>
+    <!-- Stylesheet Links -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/icons/boxicons-master/css/boxicons.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <!--Navigation Logo -->
+            <a href="#" class="nav_logo">Queens</a>
+            <!-- Navigation Menu -->
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list grid">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link">Home</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#services" class="nav_link">Services</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link">About</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#menu" class="nav_link">Menu</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#contact" class="nav_link">Contact</a>
+                    </li>
+                </ul>
+                <i class="bx bx-x nav_close" id="nav-close"></i>
+            </div>
+            <!-- Open Menu Button -->
+            <div class="nav_btn">
+                <div class="nav_cart" id="nav-cart">
+                    <i class='bx bx-shopping-bag' ></i>
+                    <span class="cart_no">3</span>
+                </div>
+                <div class="nav_user">
+                    <i class='bx bx-user'></i>
+                </div>
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="bx bx-menu"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Main Section -->
+    <main>
+        <!-- Home Section -->
+        <section class="home section" id="home">
+            <div class="home_container container">
+                <div class="home_content">
+                    <h2 class="content_title">Special Ethiopian traditional food every time in our restaurant</h2>
+                    <p class="content_para">
+                        We promise you'll enjoy every sweet moment find your favorite menu, eat what, you love
+                        and save your time for something cool !
+                    </p>
+                    <!--<button class="home_btn">Book Table</button>-->
+                    <div class="home_reservation">
+                        <div class="home_reservation_col">
+                            <h4>Guests</h4>
+                            <p>
+                                Add Guests
+                            </p>
+                        </div>
+                        <div class="home_reservation_col">
+                            <div class="home_guests">
+                                <button id="decreament" onclick="stepper(this)">-</button>
+                                <input type="number" value="1" min="0" max="8" step="1" id="my-input" readonly>
+                                <button id="increament" onclick="stepper(this)"> + </button>
+                            </div>
+                        </div>
+                        <button class="home_reservation_btn">Search Table</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Section -->
+        <section class="services section" id="services">
+            <div class="services_container container">
+                <div class="service_container_title">
+                    <h2>Our Services</h2>
+                <p class="service_paragraph">
+                    when an unknown printer took a galley of type and scrambled it to make a type 
+                    specimen book. 
+                </p>
+                </div>
+                <div class="services_content">
+                    <div class="services_items">
+                        <i class='bx bx-dish'></i>
+                        <h3 class="service_title">Foods</h3>
+                        <p class="service_para">
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+                        </p>
+                    </div>
+                    <div class="services_items">
+                        <i class='bx bx-drink'></i>
+                        <h3 class="service_title">Drinks</h3>
+                        <p class="service_para">
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+                        </p>
+                    </div>
+                    <div class="services_items">
+                        <i class='bx bx-package'></i>
+                        <h3 class="service_title">Take Away</h3>
+                        <p class="service_para">
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+                        </p>
+                    </div>
+                    <div class="services_items">
+                        <i class='bx bx-taxi'></i>
+                        <h3 class="service_title">Delivery</h3>
+                        <p class="service_para">
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="about_container container">
+                <div class="about_container_content">
+                    <div class="about_content_details">
+                        <h3 class="about_content_details_title">Who we are</h3>
+                        <p class="about_content_details_para">
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type 
+                            specimen book.
+                        </p>
+                        
+                        <div class="about_numbers">
+                            <div class="num">
+                                <h3 class="number">12</h3>
+                                <p>Years Of Experience</p>
+                            </div>
+                            <div class="num">
+                                <h3 class="number">576</h3>
+                                <p>Daily Customers</p>
+                            </div>
+                            <div class="num">
+                                <h3 class="number">56</h3>
+                                <p>Working Staffs</p>
+                            </div>
+                        </div>
+                        <button class="about_content_details_btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Menu Section -->
+        <section class="menu section" id="menu">
+            <div class="menu_container container">
+                <h3 class="menu_title">Check Our Menu Catagories</h3>
+                <div class="menu_navigation">
+                    <ul class="menu_list">
+                        <li class="menu_item active"  data-filter="All">
+                            All Menu
+                        </li>
+                        <li class="menu_item" data-filter="Food">
+                            Foods
+                        </li>
+                        <li class="menu_item" data-filter="Drink">
+                            Drinks
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu_banner">
+                    <div class="menu_items Food">
+                        <div class="menu_items_card">
+                            <div class="menu_img_box">
+                                <img src="img/home img.jpg" alt="">
+                            </div>
+                            <div class="menu_desc">
+                                <h3>Special Beyanet</h3>
+                                <p>
+                                    Real Flavor
+                                </p>
+                            </div>
+                            <div class="menu_price_cart">
+                                <h4 class="menu_price">250 Br</h4>
+                                <i class='bx bx-cart-alt'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_items Food">
+                        <div class="menu_items_card">
+                            <div class="menu_img_box">
+                                <img src="img/tibs.jpg" alt="">
+                            </div>
+                            <div class="menu_desc">
+                                <h3>Special Tibs</h3>
+                                <p>
+                                    With Spicie
+                                </p>
+                            </div>
+                            <div class="menu_price_cart">
+                                <h4 class="menu_price">220 Br</h4>
+                                <i class='bx bx-cart-alt'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_items Food">
+                        <div class="menu_items_card">
+                            <div class="menu_img_box">
+                                <img src="img/firfir.jpg" alt="">
+                            </div>
+                            <div class="menu_desc">
+                                <h3>Enjera Firfir</h3>
+                                <p>
+                                    Best Test
+                                </p>
+                            </div>
+                            <div class="menu_price_cart">
+                                <h4 class="menu_price">150 Br</h4>
+                                <i class='bx bx-cart-alt'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_items Food">
+                        <div class="menu_items_card">
+                            <div class="menu_img_box">
+                                <img src="img/beyaynetu.jpg" alt="">
+                            </div>
+                            <div class="menu_desc">
+                                <h3>Yesoam Beyanet</h3>
+                                <p>
+                                    Real Ethiopian Test
+                                </p>
+                            </div>
+                            <div class="menu_price_cart">
+                                <h4 class="menu_price">350 Br</h4>
+                                <i class='bx bx-cart-alt'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_items Drink">
+                        <div class="menu_items_card">
+                            <div class="menu_img_box">
+                                <img src="img/tej.jpg" alt="">
+                            </div>
+                            <div class="menu_desc">
+                                <h3>Ye Mar Tej</h3>
+                                <p>
+                                    Pure Honey
+                                </p>
+                            </div>
+                            <div class="menu_price_cart">
+                                <h4 class="menu_price">130 Br</h4>
+                                <i class='bx bx-cart-alt'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_items Drink">
+                        <div class="menu_items_card">
+                            <div class="menu_img_box">
+                                <img src="img/tela.jpg" alt="">
+                            </div>
+                            <div class="menu_desc">
+                                <h3>Tela</h3>
+                                <p>
+                                    Fresh and Safe
+                                </p>
+                            </div>
+                            <div class="menu_price_cart">
+                                <h4 class="menu_price">150 Br Per/lir</h4>
+                                <i class='bx bx-cart-alt'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_items Drink">
+                        <div class="menu_items_card">
+                            <div class="menu_img_box">
+                                <img src="img/wine.jpg" alt="">
+                            </div>
+                            <div class="menu_desc">
+                                <h3>Wine</h3>
+                                <p>
+                                    Ethiopian Beverage
+                                </p>
+                            </div>
+                            <div class="menu_price_cart">
+                                <h4 class="menu_price">280 Br</h4>
+                                <i class='bx bx-cart-alt'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_items Drink">
+                        <div class="menu_items_card">
+                            <div class="menu_img_box">
+                                <img src="img/softdrink.jpg" alt="">
+                            </div>
+                            <div class="menu_desc">
+                                <h3>Soft Drinks</h3>
+                                <p>
+                                    Different Kind
+                                </p>
+                            </div>
+                            <div class="menu_price_cart">
+                                <h4 class="menu_price">50 Br</h4>
+                                <i class='bx bx-cart-alt'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_items Food">
+                        
+                    </div>
+                    <div class="menu_items Drink">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="contact_container container">
+                <h3 class="contact_section_title">Get In Touch </h3>
+                
+                <div class="contact_input_group">
+                    <div class="contact_input">
+                        <input type="text" placeholder="Full Name">
+                    </div>
+                    <div class="contact_input">
+                        <input type="email" placeholder="Your Email">
+                    </div>
+                    <div class="contact_input">
+                        <input type="text" placeholder="Your Message">
+                    </div>
+                    <button class="contact_btn">Send</button>
+                </div>
+                <div class="contact_map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31523.878974796287!2d38.751827925638565!3d9.019455570972076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8595f57edab7%3A0x803be3de4da75b9a!2z4Yqg4YqV4Yu14YqQ4Ym1IOGNk-GIreGKrQ!5e0!3m2!1sam!2sus!4v1680085637199!5m2!1sam!2sus" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="contact_branch_info_group">
+                        <div class="contact_branch_info">
+                            <div class="contact_info">
+                                <i class='bx bx-map-alt'></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>
+                                        Addis Ababa, Ethiopia
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="contact_info">
+                                <i class='bx bx-envelope' ></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>
+                                        queensrestaurant@info.com
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="contact_info">
+                                <i class='bx bx-phone'></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>
+                                        +251 912345678
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer_col_one">
+            <h3>Queens Restaurant.</h3>
+            <p>
+               &copy; 2023. All Right Reserved
+            </p>
+
+        </div>
+        <div class="footer_col_two">
+            <h4>Services</h4>
+            <ul class="footer_service">
+                <li>Food</li>
+                <li>Drinks</li>
+                <li>Takeaway</li>
+            </ul>
+        </div>
+        <div class="footer_col_three">
+            <h4>Company</h4>
+            <ul class="footer_service">
+                <li>About</li>
+                <li>FAQ</li>
+                <li>Help</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="footer_col_four">
+            <h4>Our Address</h4>
+            <p> 
+                Around Unity Park<br>
+                Addis Ababa, Ethiopia
+            </p>
+            <div class="footer_sci">
+                <i class='bx bxl-facebook-circle'></i>
+                <i class='bx bxl-trip-advisor' ></i>
+                <i class='bx bxl-tiktok'></i>
+            </div>
+        </div>
+    </footer>
+    <div class="designer">
+        <h5>Design By : Abel Getahun</h5>
+    </div>
+
+    <!-- Javascript Links -->
+    <script src="assets/jquery/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+    </script>
+</body>
+</html>
